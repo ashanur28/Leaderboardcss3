@@ -24,12 +24,15 @@ main {
     color: #562EFF;
     font-size: 24px;
     font-weight: 500;
+    margin-top: 2px;
 }
 
 .players {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     background-color: #FFFFFF;
+    row-gap: 30px;
+    margin-bottom: 30px;
 }
 
 .player {
@@ -43,4 +46,11 @@ main {
 
 .player-name {
     margin-left: 16px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+hr {
+    border: 1px solid #D1D1D1;
 }
