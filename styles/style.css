@@ -19,7 +19,6 @@ main {
     height: 679px;
     padding: 30px;
     margin-top: 21px;
-    border: 3px solid red;
     border-radius: 5px;
 
 
@@ -104,6 +103,26 @@ hr {
 }
 
 /* course styles */
+.Courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+}
+
+.course {
+    width: 253px;
+    height: 270px;
+    drop-shadow(0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05));
+    padding-left: 15px;
+    padding-right: -15px;
+    padding-top: 13px;
+    border-radius: 5px;
+    box-shadow: 5px 10px #FFFFFF;
+    ;
+
+
+}
+
 .course-banner img {
     width: 224px;
     height: 104px;
@@ -122,6 +141,16 @@ hr {
     margin-top: -20px;
 }
 
+.course-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fa-star {
+    font-size: 12px;
+}
+
 .fa-star.filled {
     color: #FFC014;
 }
@@ -130,6 +159,33 @@ hr {
     color: #aeaeae6d;
 }
 
-.course-duration {
-    display: flex;
+.time {
+    border-radius: 10px;
+    height: 20px;
+    background-color: rgba(255, 192, 203, 0.45);
+    width: 58px;
+    color: rgba(216, 112, 147, 0.573)
+}
+
+.fa-clock.Clock {
+    color: #ED6B4F;
+}
+
+/* media queries */
+/* mobile divices */
+@media only screen and (max-width:668px) {
+    .container {
+        width: 100%;
+    }
+
+    .players,
+    .blogs,
+    .Courses {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .player,
+    .blogs {
+        flex-direction: column;
+    }
 }
